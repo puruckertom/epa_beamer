@@ -1,0 +1,43 @@
+---
+title: "Example of EPA Beamer Theme"
+date: 2015-11-17
+output:
+  beamer_presentation:
+    theme: "EPA"
+    includes:
+      in_header: EPABeamerTheme.tex
+    
+---
+
+## EPA Beamer Theme
+
+This Beamer Theme is designed to reproduce the standard EPA Science PowerPoint theme.  It supports the use of Rmarkdown, Pandoc Markdown, and Latex as well as embedded R code.
+
+## Requirements
+
+- EPA Beamer theme files to be placed in working folder of the presentation
+    - beamerthemeEPA.sty
+    - beamercolorthemeEPA.sty
+    - beamerfontthemeEPA.sty
+    - beamerinnerthemeEPA.sty
+    - beamerouterthemeEPA.sty
+    - EPA_logo_green.png
+- Latex includes also placed in working directory
+    - EPABeamerTheme.tex
+        - Author info
+        - Institution info
+        - Subtitle
+        - other customized latex specific info
+
+## Slide with R Code and Output
+
+```{r}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
